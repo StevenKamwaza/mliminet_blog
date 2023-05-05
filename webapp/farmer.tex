@@ -1,0 +1,95 @@
+ <center class="mt-3">
+        <h1 class="lead text-white ft-4">UPDATES FROM MLANGIZI</h1>
+        
+
+
+        <div id="post">
+            <div class="container mt-2 bg-success">
+               <ul class="nav ">
+                    <?php
+                       foreach ($posts as $post){?>
+                            <li class="card-media bg text-white mt-1">
+                                <a href="articles.php?id=<?php echo $post['id']; ?>" class="nav-link" >
+                                    <h3 class="text-center lead text-justify bg-dark  text-white"><?php echo $post['title'];?></h2></a>
+                                    <img src="images/rice.jpg" class="m-3" srcset="">
+                                
+                                <h6 class="lead jext-justify text-center m-2">
+                                    <?php echo $post['subtitle']?>
+                                   <a href="articles.php?id=<?php echo $post['id']; ?>"  class="text-primary">..[] Readmore</a>
+                                   
+                                </h6>
+                                <span class="text-warning text-white mt-1">
+                                    <small><b>posted</b> <i><?php echo $post['time']; ?></i></small>
+                                </span>
+
+                                <hr class="bg-secondary">
+                            </li>
+                        <?php } ?>                      
+                    </ul>               
+                    
+                    
+            </div>
+        </div>
+
+    </center>
+
+
+
+
+
+
+
+    <div class="card-group">
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+ 
+                        <div class="card link-item  m-1" style="width: 18rem;">
+                            <img class="card-img-top" src="images/rice.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <p class="card-text"><?php echo $post['subtitle'] ?></p>
+                                </div>
+                                
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Readmore</a>
+                                    <a href="#" class="card-link"> <?php echo date('l, F jS Y.',$post['time']); ?> </a>
+                                </div>
+                            </div>
+                                
+                        </div>
+
+                        <?php 
+                          }
+                    ?>

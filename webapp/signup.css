@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('images/kk.jpg');
+    background-size: cover;
+    background-position: inherit;
+}
+
+.loginbox {
+    width: 320px;
+    height: 420px;
+    background: #336E7B;
+    color: khaki;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    box-shadow: olive;
+}
+
+.loginbox input[type="email"],
+input[type="password"] {
+    border: none;
+    border-bottom: 4px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #ccc;
+    font-size: 16px;
+}

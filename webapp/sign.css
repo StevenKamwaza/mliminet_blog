@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('images/back.jpg');
+    background-size: cover;
+    background-position: inherit;
+}
+
+.form1 {
+    width: 370px;
+    height: 550px;
+    background: #336E7B;
+    color: khaki;
+    position: absolute;
+    left: 20%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    box-shadow: olive;
+}
+
+.form2 {
+    width: 370px;
+    height: fit-content;
+    background: #336E7B;
+    color: khaki;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    box-sizing: border-box;
+    box-shadow: olive;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    border: none;
+    border-bottom: 4px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #ccc;
+    font-size: 16px;
+}
